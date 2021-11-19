@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>PiggyVest Signup page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <!-- fonts for both the heading and paragraph in the form respectively -->
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fira+Sans&family=Karla&display=swap"
+  rel="stylesheet">
+  </head>
+  <body>
+    <div class="icon-container">
+    <div>
+      <img id="top-left" src="./assets/top-left_piggyvest-icon.png">
+    </div>
+    <div>
+      <img id="top-right" src="./assets/top-right_piggyvest-icon.png">
+    </div>
+    </div>
+<div class="main-container">
+    <div class="image-container">
+      <a href="https://www.piggyvest.com">
+        <!-- <img src="./assets/piggyvest-logo.0b78a8fa.svg" alt="piggyvest logo"> -->
+      </a>
+    </div>
+    <div class="form-container">
+      <form action="/api/products" method="POST">
+        <header>
+          <h1>Post a new Item</h1>
+          <p>Just type in the fields the product info you wish to post</p>
+        </header>
+        <div class="field-container" >
+          <div>
+            <label for="product-title">Product Title</label>
+          </div>
+          <input class="field" type="text" placeholder="Product-title" name="product-title">
+        </div>
+        <div class="field-container" >
+          <div>
+            <label for="product-price">Product Price</label>
+          </div>
+          <input class="field"  type="text" placeholder="Product price" name="product-price">
+        </div>
+        <div class="field-container">
+          <div>
+            <label for="quantity">Quantity</label>
+          </div>
+          <input class="field"  type="number" placeholder="quantity" name="quantity">
+        </div>
+        <div class="field-container">
+          <div>
+            <label for="image">Image</label>
+          </div>
+          <input class="field"  type="file" placeholder="Product Image">
+        </div>
+        <div class="field-container select-container">
+          <div>
+            <label>Size</label>
+          </div>
+          <select class="field " >
+            <div class="option-container">
+            <option selected>Click to Select</option>
+            <option >small</option>
+            <option>medium</option>
+            <option>large</option>
+            <option>Ex-Large</option>
+            </div>
+          </select>
+        </div>
+        <div>
+          <button class="register-btn value="Post">Post item</button>
+        </div>
+      </form>
+<!-- <div class="icon-container">
+  <div>
+    <img id="icon-bottom-left" src="./assets/bottom-left_piggyvest-icon.png">
+  </div>
+  <div>
+    <img id="icon-bottom-right" src="./assets/bottom-right_piggyvest-icon.png">
+  </div>
+</div> -->
+    </div>
+    <a class="login-link" href="https://dasboard.piggyvest.com/login">Already have an account? Log In</a>
+    <!-- </div>
+    <div class="icon-container">
+      <div>
+        <img id="icon-bottom-left" src="./assets/bottom-left_piggyvest-icon.png">
+      </div>
+      <div>
+        <img id="icon-bottom-right" src="./assets/bottom-right_piggyvest-icon.png">
+      </div>
+    </div> -->
+  </body>
+</html>

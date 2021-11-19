@@ -1,0 +1,163 @@
+@media only screen and (min-width:401px) and (max-width:960px){
+  body{
+  /* //background color from HNG */
+  /* background: #ADD8E6; */
+   /* background-color from piggyvest */
+  background:#062863;
+  }
+  .icon-container{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* styles for the icon top left and right */
+#top-left{
+position:absolute;
+width:20%;
+top:-9px;
+left:-9px;
+}
+#top-right{
+  position:absolute;
+  width:10%;
+  right:-9px;
+}
+  /* styles for main-container that hold all*/
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1.5%;
+}
+/* styles for image container */
+.image-container{
+  margin:30px auto;
+}
+/* styles for header */
+header{
+  text-align:center;
+  margin-top:1%;
+  margin-bottom:2rem;
+}
+/*styles for header inside the form*/
+header > h1{
+  color:#083e9e;
+  font-size:1.40em;
+  /* font-size:20px; */
+  line-height:30px;
+  text-size-adjust: 100%;
+  font-weight:600;
+  font-family: "Bree Serif",serif;
+  text-align: center;
+  margin:1.5% auto;
+  letter-spacing: 2.5%;
+}
+/*styles for the paragraph inside form*/
+header >p {
+  color:#4a5568;
+  font-size:.875rem;
+  font-size:14px;
+  line-height:21px;
+  font-family: 'Karla', sans-serif;
+}
+/*styles for the div that holds the form itself with*/
+.form-container{
+  background:#fff;
+  max-width:28rem;
+  width:70%;
+  margin:auto;
+  padding-top:3%;
+  padding-left:-5px;
+  /* padding-right:2%; */
+  padding-bottom:6%;
+  border-top-right-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  /* height:900px; */
+}
+/* styles for the form */
+form{
+  /* overflow-y:scroll; */
+  /* height:700px; */
+  width:84%;
+}
+/* styles for the field container */
+.field-container{
+  margin-bottom:7%;
+}
+/* styles for the input labels */
+label{
+  color:#4a5568;
+  line-height: 2;
+  font-size: .75rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  /* margin-bottom:4%; */
+}
+/* styles for the form fields */
+.field{
+  color:#1a202c;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #edf2f7;
+  border:none;
+  padding-top:.75rem;
+  padding-bottom:.75rem;
+  padding-left:.75rem;
+  padding-right:.5rem;
+  line-height:2em;
+  border-radius:.25rem;
+  width:100%;
+  font-size:100%;
+  margin:auto;
+}
+/* styles for the select field */
+
+option{
+  font-size: 1.5em;
+  height: 100px;
+  margin-bottom:4%;
+}
+/* styles for the register btn */
+.register-btn{
+  background:rgb(8,62,158);
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+  border-bottom-right-radius:.75rem;
+  font-size:.875rem;
+  /* font-weight:700; */
+  letter-spacing: 2px;
+  color:#fff;
+  cursor:pointer;
+  text-transform:uppercase;
+  font-family:"Bree serif",serif;
+  padding-top:1.25rem;
+  padding-left: 2.5rem;
+  padding-right:2.5rem;
+  padding-bottom:1rem;
+  width:100%;
+  border:none;
+}
+.register-btn:hover{
+  background:rgb(6,43,111);
+}
+
+/* styles for login link */
+.login-link{
+  text-align:center;
+  text-decoration: none;
+  color:rgb(255,255,255);
+   font-family: 'Karla', sans-serif;
+   font-size:12px;
+   margin-top:2rem;
+   margin-bottom:2rem;
+   font-weight: 400;
+}
+.login-link:hover{
+  color: rgb(179, 179, 179);
+}
+}
