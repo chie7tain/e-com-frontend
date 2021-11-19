@@ -10,6 +10,7 @@ const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
 // cart
 let url = "http://localhost:3000/api/products";
+let hostedUrl = "https://newserve7.herokuapp.com/api/products";
 let cart = [];
 // buttons
 let buttonsDOM = [];
@@ -17,7 +18,7 @@ let buttonsDOM = [];
 class Products {
   async getProducts() {
     try {
-      let products = await (await fetch(url)).json();
+      let products = await (await fetch(hostedUrl)).json();
       products = products.map((product) => {
         const {
           id,
@@ -198,7 +199,7 @@ class UI {
         Storage.saveCart(cart);
         this.setCartValues(cart);
         addAmount.nextElementSibling.innerText = tempItem.amount;
-      }else if (e.target.classList.contains("fa-chevron-down")) {
+      } else if (e.target.classList.contains("fa-chevron-down")) {
         let lowerAmount = e.target;
         let id = lowerAmount.dataset.id;
         let tempItem = cart.find((item) => item.varietyId === id);
